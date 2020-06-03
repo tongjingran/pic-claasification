@@ -1,6 +1,6 @@
 '''ResNet-18 Image classfication for cifar-10 with PyTorch 
 
-Author 'Sun-qian'.
+Author 'tongjingran'.
 
 '''
 import torch
