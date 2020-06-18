@@ -11,7 +11,6 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-# 定义是否使用GPU
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 

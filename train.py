@@ -49,7 +49,7 @@ trainloader = torch.utils.data.DataLoader(trainset, batch_size=BATCH_SIZE, shuff
 
 testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=False, transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=100, shuffle=False, num_workers=2)
-# Cifar-10的标签
+# Cifar-10的标签ttt
 classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 
 # 模型定义-ResNet
@@ -79,7 +79,7 @@ if __name__ == "__main__":
                     length = len(trainloader)
                     inputs, labels = data
                     inputs, labels = inputs.to(device), labels.to(device)
-                    optimizer.zero_grad()
+                    optimizer.zero_grad() # 累计梯度清理
 
                     # forward + backward
                     outputs = net(inputs)
